@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cloud Computing For Data Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">ITCS 6190: Cloud Computing for Data Analysis</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Introduction</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#algorithms">Implementation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#results">Results</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Gun violence data Classification</h1>
+                <hr>
+                <h2>Team Members</h1>
+
+                <p>
+
+                <table class="table table" >
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th> Arpitha Narasinh Alur  </th>
+                            <th> aalur1@uncc.edu  </th>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th> Karthik Rao  </th>
+                            <th> krao2@uncc.edu  </th>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th> Sneha Ramesh Watharkar  </th>
+                            <th> swathark@uncc.edu  </th>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th> Sumukh Chitrashekar  </th>
+                            <th> schitras@uncc.edu  </th>
+                        </tr>
+                    </tbody>
+
+
+                </table>
+
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">1. Introduction</h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                        Now a days we see that a lot of gun violence incidents in schools, colleges, restaurants & in
+                        public places. A lot of things are responsible for these incidents such as racial discrimination,
+                        mental health, bullying etc. In order to reduce mass shootings, the policy makers & the public at
+                        large need to know the various reasons for occurance of these events, the shooter's motives
+                        etc, and these informations can be obtained through data classification & analysis. And hence
+                        the motivation for our project.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2. Tasks and Approach</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-12">
+                    <div>
+                        <p class="text-muted">
+                        Analysing the Gun Violence data and classifying the data set depending on the various metrics
+                        after applying classification models.
+                        </br>● We shall set some hypothesis to be drawn from our dataset after the classification
+                        models are applied on the dataset.
+                        </br>● We shall clean and preprocess the dataset.
+                        </br>● We shall also figure out the important fields in the dataset for analysis and answering
+                        some hypothesis.
+                        </br>● Developing and applying the algorithms and bringing out the results in a tabular format
+                        or graphs.
+                        We are considering Naive Bayes, Logistic Regression as a classifier and KNN classifier
+                        algorithm for now. The technologies we will be using are Java, Python,Apache Spark. Logistic
+                        regression will be applied to hypothesis which has binary classification like.
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    
+      <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">3. Data set</h2>
+                    <hr class="light">
+                    <p class="text-faded"> 
+                    The dataset we have chosen is <a href="https://www.kaggle.com/jameslko/gun-violence-data/home">Gun violence data </a>with records dated from 2013 to 2018. The source of the dataset is Kaggle. The entire data set has 260k records and 29 features. The data set is of 34MB size. Out of the 29 features, we will only be using certain features for our analysis. In order to obtain the required data we will have to do preprocessing and combine data from multiple features. The following features are the once which we will be using :
+                    </br>- State (indicates state of the incident): used to classify the region of crime (West, Midwest,
+                    Northeast, Southwest, Southeast, Pacific)
+                    </br>- Participant_age_group, participant_type: used to classify the age group of the suspect
+                    </br>- Participant_type, participant_status: used to classify status of suspect after the incident
+                    </br>- Data: used to classify gun violence based on year
+                    </br>- n_killed , n_injured: Used to classify the severity of the incidence
+                    </br>- Participant_gender, Participant_type: used to classify the gender of the suspect.
+                    </p>
+                   <!--  <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Implementation</a> -->
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <section id="algorithms">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">4. Algorithms Implemented</h2>
+                    <hr class="primary">
+                    <p>Naive Bayes, Logistic Regression & KNN Algorithms have been implemented in Hadoop Map Reduce to classify various hypothesis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Naive Bayes Algorithm [TBD] </h3>
+
+                        <img src="img/NBFormula.png"></p>
+                </div> 
+                <br/>
+                <div class="col-lg-12">
+                    <h3>Logistic Regression [TBD]</h3>
+
+                </div>               
+                <br/>
+
+
+                <div class="col-lg-12">
+                    <h3>K-Nearest Neighbors Algorithm [TBD]</h3>
+ 
+                </div>               
+            </div>
+        </div>
+    </section>
+    
+    
+     <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">5. Project Accomplishments</h2>
+                    <hr class="light">
+                 </div>
+             </div>
+         </div>
+         <div class="container">
+         	<div class="row">
+                    <div class="col-lg-12">
+                    <h3>Deliverables (Definitely accomplish) </h3>
+                    <p class="text-faded text-left">
+                    - Implementation of Naive Bayes to classify . . . . .<br/>
+                    - Implementation of Logistic Regression and K-Nearest Neighbors algorithms to classify . . . <br/>
+                    - Implementation of K-Nearest Neighbors algorithms to classify . . . .<br/>
+                    - Pre-processing of data set using numpy, pandas libraries<br/>
+                    </p>
+                    </div>
+                    <div class="col-lg-12">
+                    <h3>Deliverables (Likely to accomplish)</h3>
+                    <p class="text-faded text-left">
+                    - Visualization of the data set<br/>
+                    - Prediction of ... based on the user's test data input using Naive Bayes<br/>
+                    - Prediction of ... based on the user's test data input using Logistic Regression<br/>
+                    - Prediction of ... based on the user's test data input using KNN<br/>
+
+                    </p>
+                 </div>
+            </div>
+        </div>
+    </section>
+   
+ 
+      <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">6. Visualization of the data</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                        <p class="text-muted">
+                           <img src="img/cloud_vis/2018-2019-pred.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/killed-injured-gender.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/regionwise-M-F-incidents.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/Age_group.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/map-noof incidents.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/regionwise-totalinjuredkilled.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/trend-2018-2019.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/Year-month.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/month-total-year.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/regionwise-totalinjuredkilled1.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/victims-gender.PNG"/>
+                           <img src="img/cloud_vis/age_group-regionwise.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/participant_status.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/state-age.PNG"/>
+						   </br>
+                           <img src="img/cloud_vis/year-month-totalinjuredkilled.PNG"/>
+						   </br>
+              
+                        
+                         </p>
+                </div> 
+            </div>
+         </div>
+    </section>
+
+     <section id="results">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">7. Results</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Naive Bayes Algorithm</h3>
+                        <p class="text-muted">
+                        <table class="table table-bordered text-center">
+    						<thead>
+						      <tr>
+						        <th  class="col-xs-6 text-center">Value of alpha</th>
+						        <th  class="col-xs-6 text-center">Accuracy</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>1</td>
+						        <td>2%</td>
+						       </tr>
+						      <tr>
+						        <td>3</td>
+						        <td>4%</td>
+						       </tr>
+						       <tr>
+						        <td>5</td>
+						        <td>6%</td>
+						       </tr>
+						       <tr>
+						        <td>7</td>
+						        <td>8%</td>
+						       </tr>
+						    </tbody>
+						  </table>
+						   Sample prediction output:<br/><br/>
+						   <img src="img/NB_output_1.jpeg"/>
+						 </p>
+                </div> 
+            </div>
+         </div>
+
+         <div class="container">
+             <div class="row">
+                <div class="col-lg-12">
+                    <h3>Logistic Regression Algorithm</h3>
+                        <p class="text-muted">
+                        <table class="table table-bordered text-center">
+                            <thead>
+                              <tr>
+                                <th class="col-xs-6 text-center">Value of K</th>
+                                <th class="col-xs-6 text-center">Accuracy</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>2%</td>
+                               </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>4%</td>
+                                 </tr>
+                            </tbody>
+                          </table>
+                           Sample prediction output:<br/><br/>
+                           <img src="img/NB_output_1.jpeg"/>
+
+                       </p>
+                </div>               
+            </div>
+        </div>
+
+         <div class="container">
+             <div class="row">
+                <div class="col-lg-12">
+                    <h3>K-Nearest Neighbors Algorithm</h3>
+                        <p class="text-muted">
+                        <table class="table table-bordered text-center">
+    						<thead>
+						      <tr>
+						        <th class="col-xs-6 text-center">Value of K</th>
+						        <th class="col-xs-6 text-center">Accuracy</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>1</td>
+						        <td>2%</td>
+						       </tr>
+						      <tr>
+						        <td>3</td>
+						        <td>4%</td>
+						         </tr>
+						    </tbody>
+						  </table>
+                           Sample prediction output:<br/><br/>
+                           <img src="img/NB_output_1.jpeg"/>
+
+                       </p>
+                </div>               
+            </div>
+        </div>
+    </section>
+     <section class="bg-primary" id="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">7. Additional Comments</h2>
+                    <hr class="light">
+                 </div>
+             </div>
+         </div>
+         <div class="container">
+         	<div class="row">
+                <div class="col-lg-12">
+                    <p class="text-faded text-hleft">
+                        - The project was executed on DSBA Hadoop cluster which has a configuration of ....<br/>
+                        - An alpha value of 0.1 was found to be effective for Naive Bayes algorithm
+                    </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="teammembers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">8. Task division</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                   <p>Arpitha Narasinh Alur <br/> 
+					- TBD <br/> 
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    <br/>
+
+                    Karthik Rao<br/>
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    <br/>                    
+                    
+                    Sneha Ramesh Watharkar<br/>
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    <br/>
+
+                    Sumukh Chitrashekar<br/>
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    - TBD <br/> 
+                    <br/>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
