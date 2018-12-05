@@ -68,7 +68,8 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Gun violence data Classification</h1>
+                <h1>STATISTICAL ANALYSIS OF GUN VIOLENCE IN USA </h1>
+
                 <hr>
                 <h2>Team Members</h1>
 
@@ -124,13 +125,24 @@
                     <h2 class="section-heading">1. Introduction</h2>
                     <hr class="light">
                     <p class="text-faded">
-                        Now a days we see that a lot of gun violence incidents in schools, colleges, restaurants & in
-                        public places. A lot of things are responsible for these incidents such as racial discrimination,
-                        mental health, bullying etc. In order to reduce mass shootings, the policy makers & the public at
-                        large need to know the various reasons for occurance of these events, the shooter's motives
-                        etc, and these informations can be obtained through data classification & analysis. And hence
-                        the motivation for our project.
+                     </p>
+                </div>
+            </div>
+        </div>          
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
 
+                    <p class="text-faded">               
+                     Crime rates are increasing at an exponential rate day by day. Gun violence is one of the major crimes in the united states of America. Analyzing the gun violence data would help us to know how many incidents happen over a period of time,how many people are affected by the incident,what age group are likely to participate in these incidents etc. Analyzing this data may help in knowing what part of the country has highest gun violence.
+                    </br>
+                    </br>
+                    The project involves working on a Gun violence dataset to analyse the outcomes of different machine learning algorithms  based on few of the hypothesis assumed.
+                    Few of the major tasks involved were :
+                    </br> - Cleaning and preprocessing the data which involved taking care of the missing values
+                    </br> - breaking down the columns so that the features chosen were relevant to the hypothesis 
+                    </br> - applying machine learning algorithms to solve the relevant hypothesis
+                    </br>
                     </p>
                 </div>
             </div>
@@ -150,18 +162,12 @@
                  <div class="col-lg-12">
                     <div>
                         <p class="text-muted">
-                        Analysing the Gun Violence data and classifying the data set depending on the various metrics
-                        after applying classification models.
-                        </br>● We shall set some hypothesis to be drawn from our dataset after the classification
-                        models are applied on the dataset.
-                        </br>● We shall clean and preprocess the dataset.
-                        </br>● We shall also figure out the important fields in the dataset for analysis and answering
-                        some hypothesis.
-                        </br>● Developing and applying the algorithms and bringing out the results in a tabular format
-                        or graphs.
-                        We are considering Naive Bayes, Logistic Regression as a classifier and KNN classifier
-                        algorithm for now. The technologies we will be using are Java, Python,Apache Spark. Logistic
-                        regression will be applied to hypothesis which has binary classification like.
+                        The tasks involved are:
+                    </br>● Developing hypothesis
+                    </br>● Pre processing the data
+                    </br>● Visualizing the data
+                    </br>● Implementing Naive Bayes, Logistic Regression, KNN algorithms
+                    </br>● Implementing code to process user inputs & predit relevant hypothesis
                     </div>
                 </div>
               </div>
@@ -171,9 +177,19 @@
       <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h2 class="section-heading">3. Data set</h2>
+
                     <hr class="light">
+                    <p class="text-faded">
+                     </p>
+                </div>
+            </div>
+        </div>     
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
                     <p class="text-faded"> 
                     The dataset we have chosen is <a href="https://www.kaggle.com/jameslko/gun-violence-data/home">Gun violence data </a>with records dated from 2013 to 2018. The source of the dataset is Kaggle. The entire data set has 260k records and 29 features. The data set is of 34MB size. Out of the 29 features, we will only be using certain features for our analysis. In order to obtain the required data we will have to do preprocessing and combine data from multiple features. The following features are the once which we will be using :
                     </br>- State (indicates state of the incident): used to classify the region of crime (West, Midwest,
@@ -196,28 +212,31 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">4. Algorithms Implemented</h2>
                     <hr class="primary">
-                    <p>Naive Bayes, Logistic Regression & KNN Algorithms have been implemented in Hadoop Map Reduce to classify various hypothesis.</p>
+                    <p>Logistic Regression & KNN Algorithms have been implemented in Hadoop Map reduce to classify various hypothesis, where as Naive Bayes has been implemented on Spark.</p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3>Naive Bayes Algorithm [TBD] </h3>
+                    <h3>Naive Bayes  </h3>
+We used this classification algorithm to solve hypothesis like
+In which coast of United states is the gun incident likely to occur? We are dividing the nation into 6 coasts. West, Midwest, Northeast, Southwest, Southeast, Pacific 
+What age group do the participants usually belong to? We are classifying this into Adult and Teen, and Child 
 
-                        <img src="img/NBFormula.png"></p>
                 </div> 
                 <br/>
                 <div class="col-lg-12">
-                    <h3>Logistic Regression [TBD]</h3>
-
+                    <h3>Logistic Regression </h3>
+For binary classification problem where we had to solve the hypothesis Which gender group is most likely to be participating in the gun incident. Here we are considering whether the suspect is male or female.
                 </div>               
                 <br/>
 
 
                 <div class="col-lg-12">
-                    <h3>K-Nearest Neighbors Algorithm [TBD]</h3>
- 
+                    <h3>K-Nearest Neighbors  </h3>
+ We used KNN to solve the hypothesis : What is the severity of the incident. We shall classify this based on the number of killed  and injured participants. We shall bin it into Low, Medium, and High.
+
                 </div>               
             </div>
         </div>
@@ -236,21 +255,25 @@
          <div class="container">
          	<div class="row">
                     <div class="col-lg-12">
-                    <h3>Deliverables (Definitely accomplish) </h3>
+                    <h3>Core Deliverables (that were marked 'Definitely accomplish') </h3>
                     <p class="text-faded text-left">
-                    - Implementation of Naive Bayes to classify . . . . .<br/>
-                    - Implementation of Logistic Regression and K-Nearest Neighbors algorithms to classify . . . <br/>
-                    - Implementation of K-Nearest Neighbors algorithms to classify . . . .<br/>
-                    - Pre-processing of data set using numpy, pandas libraries<br/>
+                    - Implementation of Naive Bayes, Logistic Regression, K-Nearest Neighbors <br/>
+                    - Answers to the following hypothesis:<br/>
+                    ● In which coast of United states is the gun incident likely to occur?<br/>
+                    ● What age group do the suspect usually belong to?<br/>
+                    ● what is the status of the participants after the incident?<br/>
+
                     </p>
                     </div>
                     <div class="col-lg-12">
-                    <h3>Deliverables (Likely to accomplish)</h3>
+                    <h3>Extra Deliverables (that were marked as 'Likely to accomplish')</h3>
                     <p class="text-faded text-left">
                     - Visualization of the data set<br/>
-                    - Prediction of ... based on the user's test data input using Naive Bayes<br/>
-                    - Prediction of ... based on the user's test data input using Logistic Regression<br/>
-                    - Prediction of ... based on the user's test data input using KNN<br/>
+                    - Answers to the following hypothesis:<br/>
+                    ● Is the gun violence increasing or decreasing each year<br/>
+                    We couldn’t solve this using algorithms, but we could accomplish this using visualization and we could predict the trend for year 2019 using time series modeling.<br/>
+                    ● Which gender group is most likely to be the suspect in the gun incident.<br/>
+                    ● What is the severity of the incident. We have classified this based on the number of killed  and injured participants and have classified it into 'low', 'medium', and 'high'.<br/>
 
                     </p>
                  </div>
@@ -274,36 +297,33 @@
                 <div class="col-lg-12">
                         <p class="text-muted">
                            <img src="img/cloud_vis/2018-2019-pred.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/killed-injured-gender.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/regionwise-M-F-incidents.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/Age_group.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/map-noof incidents.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/regionwise-totalinjuredkilled.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/trend-2018-2019.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/Year-month.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/month-total-year.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/regionwise-totalinjuredkilled1.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/victims-gender.PNG"/>
                            <img src="img/cloud_vis/age_group-regionwise.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/participant_status.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/state-age.PNG"/>
-						   </br>
+						   </br></br>
                            <img src="img/cloud_vis/year-month-totalinjuredkilled.PNG"/>
-						   </br>
-              
-                        
                          </p>
                 </div> 
             </div>
@@ -324,34 +344,10 @@
                 <div class="col-lg-12">
                     <h3>Naive Bayes Algorithm</h3>
                         <p class="text-muted">
-                        <table class="table table-bordered text-center">
-    						<thead>
-						      <tr>
-						        <th  class="col-xs-6 text-center">Value of alpha</th>
-						        <th  class="col-xs-6 text-center">Accuracy</th>
-						      </tr>
-						    </thead>
-						    <tbody>
-						      <tr>
-						        <td>1</td>
-						        <td>2%</td>
-						       </tr>
-						      <tr>
-						        <td>3</td>
-						        <td>4%</td>
-						       </tr>
-						       <tr>
-						        <td>5</td>
-						        <td>6%</td>
-						       </tr>
-						       <tr>
-						        <td>7</td>
-						        <td>8%</td>
-						       </tr>
-						    </tbody>
-						  </table>
 						   Sample prediction output:<br/><br/>
-						   <img src="img/NB_output_1.jpeg"/>
+						   <img src="img/ResultImages/NaiveBayes-AgeGroupOut.PNG"/><br/>
+                           <img src="img/ResultImages/NaiveBayes-RegionOut.PNG"/><br/>
+                           <img src="img/ResultImages/NaiveBayes-Status.PNG"/><br/> 
 						 </p>
                 </div> 
             </div>
@@ -362,26 +358,9 @@
                 <div class="col-lg-12">
                     <h3>Logistic Regression Algorithm</h3>
                         <p class="text-muted">
-                        <table class="table table-bordered text-center">
-                            <thead>
-                              <tr>
-                                <th class="col-xs-6 text-center">Value of K</th>
-                                <th class="col-xs-6 text-center">Accuracy</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>2%</td>
-                               </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>4%</td>
-                                 </tr>
-                            </tbody>
-                          </table>
+
                            Sample prediction output:<br/><br/>
-                           <img src="img/NB_output_1.jpeg"/>
+                           <img src="img/ResultImages/LogReg_SuspectGender.PNG"/>
 
                        </p>
                 </div>               
@@ -393,89 +372,56 @@
                 <div class="col-lg-12">
                     <h3>K-Nearest Neighbors Algorithm</h3>
                         <p class="text-muted">
-                        <table class="table table-bordered text-center">
-    						<thead>
-						      <tr>
-						        <th class="col-xs-6 text-center">Value of K</th>
-						        <th class="col-xs-6 text-center">Accuracy</th>
-						      </tr>
-						    </thead>
-						    <tbody>
-						      <tr>
-						        <td>1</td>
-						        <td>2%</td>
-						       </tr>
-						      <tr>
-						        <td>3</td>
-						        <td>4%</td>
-						         </tr>
-						    </tbody>
-						  </table>
-                           Sample prediction output:<br/><br/>
-                           <img src="img/NB_output_1.jpeg"/>
+                                  Sample prediction output:<br/><br/>
+                           <img src="img/ResultImages/KNN.PNG"/>
 
                        </p>
                 </div>               
             </div>
         </div>
     </section>
-     <section class="bg-primary" id="comments">
+
+    
+    
+    
+    <section class="bg-primary" id="teammembers">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">7. Additional Comments</h2>
+                    <h2 class="section-heading">7. Task division</h2>
                     <hr class="light">
-                 </div>
-             </div>
-         </div>
-         <div class="container">
-         	<div class="row">
-                <div class="col-lg-12">
-                    <p class="text-faded text-hleft">
-                        - The project was executed on DSBA Hadoop cluster which has a configuration of ....<br/>
-                        - An alpha value of 0.1 was found to be effective for Naive Bayes algorithm
-                    </p>
-                    </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    <section id="teammembers">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">8. Task division</h2>
-                    <hr class="primary">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                   <p>Arpitha Narasinh Alur <br/> 
-					- TBD <br/> 
-                    - TBD <br/> 
-                    - TBD <br/> 
+                <div class="col-lg-12">
+                    <p class="text-faded text-hleft">
+
+                    Arpitha Narasinh Alur <br/> 
+					- Visualised the data<br/> 
+                    - Implimented Naive Bayes<br/> 
+                    - Generated contents for the web page report <br/>
                     <br/>
 
                     Karthik Rao<br/>
-                    - TBD <br/> 
-                    - TBD <br/> 
-                    - TBD <br/> 
+                    - Cleaned and preprocessed data. (parsed data from multiple columns etc) <br/> 
+                    - Implemented KNN <br/> 
+                    - Developed the web page <br/> 
                     <br/>                    
                     
                     Sneha Ramesh Watharkar<br/>
-                    - TBD <br/> 
-                    - TBD <br/> 
-                    - TBD <br/> 
+                    - Retrieved, cleaned and preprocessed the data.(splitting the data into multiple columns etc)<br/> 
+                    - Implemented Naive Bayes<br/> 
+                    - Compared results of the 3 algorithms for 5 hypothesis. <br/> 
                     <br/>
 
                     Sumukh Chitrashekar<br/>
-                    - TBD <br/> 
-                    - TBD <br/> 
-                    - TBD <br/> 
+                    - Did preliminary data analysis inorder to set hypotesis <br/> 
+                    - Implemented of Logistic Regression <br/> 
+                    - Debugged KNN & Naive Bayes <br/>
                     <br/>
+                </div>
 
             </div>
         </div>
