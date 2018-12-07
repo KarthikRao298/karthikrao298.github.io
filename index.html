@@ -199,8 +199,17 @@
                     </br>- Data: used to classify gun violence based on year
                     </br>- n_killed , n_injured: Used to classify the severity of the incidence
                     </br>- Participant_gender, Participant_type: used to classify the gender of the suspect.
+                    </br>
                     </p>
                    <!--  <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Implementation</a> -->
+                   
+                    Preprocessing:
+                   <p class="text-faded"> 
+                    - Columns such as Participant_type, Participant_gender, participant_status were split up into multiple columns</br>
+                    - Unnecessary columns such as city, location coordinates were dropped</br>
+                    - New columns such as suspect_gender were created, with data parsed from multiple columns</br>
+                       </p>
+
                 </div>
             </div>
         </div>
@@ -220,13 +229,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h3>Naive Bayes  </h3>
-Naive Bayes is a classification algorithm is easier to understand when described using binary or categorical input values. Naive Bayes is represented in probabilities. Rather than attempting to calculate the values of each attribute values, they are assumed to be conditionally independent given the target value.</br></br>
+Naive Bayes is a classification algorithm and is easier to understand when described using binary or categorical input values. Naive Bayes is represented in probabilities. Rather than attempting to calculate the values of each attribute values, they are assumed to be conditionally independent given the target value.</br></br>
 
 We used this classification algorithm to solve hypothesis like
 In which coast of United states is the gun incident likely to occur? </br>
 - We are dividing the nation into 6 coasts: West, Midwest, Northeast, Southwest, Southeast, Pacific </br>
 What age group do the participants usually belong to? </br>
 - We are classifying this into Adult and Teen, and Child 
+What is the Age group of the suspect?</br>
+- We have classified this into Adult and Teen, and Child </br>
 
 
                            </br></br>
@@ -234,6 +245,8 @@ What age group do the participants usually belong to? </br>
                 <br/>
                 <div class="col-lg-12">
                     <h3>Logistic Regression </h3>
+Logistic Regression uses stochastic gradient descent for computing the coefficients. Logistic regression transforms its output using a logistic sigmoid function to return a probability value which is mapped to two or more discrete classes. In the case of a binary logistic regression, the discrete values have only 2 values such as a 1 and 0.
+
 For binary classification problem where we had to solve the hypothesis Which gender group is most likely to be participating in the gun incident. Here we are considering whether the suspect is male or female.
                 </div>               
                 <br/>
