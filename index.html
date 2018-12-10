@@ -210,6 +210,144 @@
                     - New columns such as suspect_gender were created, with data parsed from multiple columns</br>
                        </p>
 
+                <table class="table table"  >
+                    <thead>
+                        <tr>
+                            <th>Feature Name (after preprocessing)</th>
+                            <th>Type (Numerical/Categorical)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> date_year</th>
+                            <th> Categorical </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> participant_male </th>
+                            <th> Categorical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th>  participant_female</th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> participant_arrested </th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th>  participant_unharmed</th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> n_killed </th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> n_injured </th>
+                            <th>  Numerical </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th>participant_victim  </th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> participant_subject_suspect </th>
+                            <th>  Numerical </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> participant_child </th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th>  participant_adult</th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> participant_teen </th>
+                            <th>  Numerical </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> total_injured_killed </th>
+                            <th> Numerical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> region </th>
+                            <th> Categorical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> incident_severity </th>
+                            <th> Categorical  </th>
+                        </tr>
+                    </tbody>
+                    <tbody class="text-faded">
+                        <tr>
+                            <th> suspect_gender </th>
+                            <th>  Categorical </th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>1. Features used to predict the age group of the suspect:
+                <p class="text-faded"> 
+                <br>Input features: date_year, date_month, participant_male, participant_female, n_injured, participant_arrested, participant_unharmed, n_killed, participant_victim, participant_subject_suspect, participant_child, participant_adult, participant_teen, total_injured_killed,region,incident_severity,suspect_gender
+                <br>
+                <br>Output features: “Adult” or “Teen” or “Child”
+                </p>
+
+                2. Features used to predict the severity of the incident:
+                <p class="text-faded"> 
+                <br>Input features: date_year, date_month, participant_male, participant_female, n_injured, participant_arrested, participant_unharmed, n_killed, participant_victim, participant_subject_suspect, participant_child, participant_adult, participant_teen, total_injured_killed,region, suspect_gender
+                <br>
+                <br>Output features: “Low” or “Medium” or “High”
+                <br>Severity is considered low if number of killed and injured is less than 10. If it’s less than 40 and more than 10 then its medium and above 40 its high.
+                </p>
+
+                3. Features used to predict the region of the incident:
+                <p class="text-faded"> 
+                <br>Input features: date_year, date_month, participant_male, participant_female, n_injured, participant_arrested, participant_unharmed, n_killed, participant_victim, participant_subject_suspect,
+                participant_child, participant_adult, participant_teen, total_injured_killed, incident_severity, suspect_gender
+                <br>
+                <br>Output features: “West” or “Pacific” or “Southeast” or “Southwest” or “Northeast” or “Midwest”
+                <br>We have used U.S. Census Bureau Regions and Divisions for zone bifurcation of states.
+                </p>
+
+                4. Features used to predict the gender of the suspect:
+                <p class="text-faded"> 
+                <br>Input features: date_year, date_month, participant_male, participant_female, n_injured, participant_arrested, participant_unharmed, n_killed, participant_victim, participant_subject_suspect,
+                participant_child, participant_adult, participant_teen, total_injured_killed, incident_severity, region
+                <br>
+                <br>Output features: “Male” or “Female”
+                </p>
+
+
                 </div>
             </div>
         </div>
@@ -239,8 +377,6 @@ What age group do the participants usually belong to? </br>
 What is the Age group of the suspect?</br>
 - We have classified this into Adult and Teen, and Child </br>
 
-
-                           </br></br>
                 </div> 
                 <br/>
                 <div class="col-lg-12">
